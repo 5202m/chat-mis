@@ -99,4 +99,5 @@ return [
         'filter_placeholder' => '过滤',
     ],
     'menu_titles' => [],
+    'Dict'                  => '字典管理',
 ];

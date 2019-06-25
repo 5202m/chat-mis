@@ -23,7 +23,7 @@ class CreateDictTable extends Migration
             Schema::create('dict', function (Blueprint $table) {
                 $table->bigIncrements('id');
                 $table->bigInteger('parent_id')->default(0)->comment('父ID');
-                $table->string('code')->unique()->comment('字典编码');
+                $table->string('code')->comment('字典编码');
                 $table->string('name_cn')->comment('字典中文名称');
                 $table->string('name_tw')->comment('字典繁体名称');
                 $table->string('name_en')->comment('字典英文名称');

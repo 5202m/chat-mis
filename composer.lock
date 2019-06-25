@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "38e62df8098467988032f54b1dd12146",
+    "content-hash": "79b32f2e83499737d8bbc59d781c2469",
     "packages": [
         {
             "name": "dnoegel/php-xdg-base-dir",
@@ -674,6 +674,50 @@
             "time": "2019-01-10T14:06:47+00:00"
         },
         {
+            "name": "ignasbernotas/laravel-model-generator",
+            "version": "1.2.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/ignasbernotas/laravel-model-generator.git",
+                "reference": "d92d0181c763868e378b9dcd75bf8a746d45b3d9"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/ignasbernotas/laravel-model-generator/zipball/d92d0181c763868e378b9dcd75bf8a746d45b3d9",
+                "reference": "d92d0181c763868e378b9dcd75bf8a746d45b3d9",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/support": "~5.0",
+                "php": ">=5.4.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Iber\\Generator\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Ignas Bernotas",
+                    "email": "ignas@iber.lt"
+                }
+            ],
+            "description": "Laravel 5 model generator from existing schema",
+            "keywords": [
+                "generator",
+                "laravel",
+                "model",
+                "schema"
+            ],
+            "abandoned": "reliese/laravel",
+            "time": "2017-04-06T09:29:06+00:00"
+        },
+        {
             "name": "jakub-onderka/php-console-color",
             "version": "v0.2",
             "source": {
@@ -760,6 +804,50 @@
             ],
             "description": "Highlight PHP code in terminal",
             "time": "2018-09-29T18:48:56+00:00"
+        },
+        {
+            "name": "laravel-admin-ext/tree-table",
+            "version": "dev-master",
+            "dist": {
+                "type": "path",
+                "url": "app/Admin/Extensions/laravel-admin-ext/tree-table",
+                "reference": "32fe58775cb111d3c83fefc00410db9de440d657"
+            },
+            "require": {
+                "encore/laravel-admin": "~1.6",
+                "php": ">=7.0.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "~6.0"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Encore\\TreeTable\\TreeTableServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Encore\\TreeTable\\": "src/"
+                }
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "zhuzhenhui",
+                    "email": "648224806@qq.com"
+                }
+            ],
+            "description": "description...",
+            "homepage": "https://github.com/laravel-admin-ext/tree-table",
+            "keywords": [
+                "extension",
+                "laravel-admin"
+            ]
         },
         {
             "name": "laravel/framework",
@@ -5000,7 +5088,9 @@
     ],
     "aliases": [],
     "minimum-stability": "dev",
-    "stability-flags": [],
+    "stability-flags": {
+        "laravel-admin-ext/tree-table": 20
+    },
     "prefer-stable": true,
     "prefer-lowest": false,
     "platform": {
